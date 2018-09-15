@@ -5,10 +5,10 @@ import org.zeroen.tuling.homework.lock.runnable.IMointerRunnable;
 /**
  * 以秒杀场景模拟各种锁的并发情况
  * 此接口定义买、查看行为
- * @Author
- * @Description
+ * @Author  zeroen
+ * @Description 秒杀场景接口
  * @Date Created in 1:20 2018/9/14
- * @Modified By：
+ * @Modified By：zeroen
  */
 public interface ISeckill {
 
