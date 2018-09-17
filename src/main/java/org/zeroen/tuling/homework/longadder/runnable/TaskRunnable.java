@@ -13,11 +13,12 @@ public class TaskRunnable implements Runnable {
 
     @Override
     public void run() {
-        long sleep = 50 + random.nextInt(751);
+        random.nextInt(1000);
+        /*long sleep = 50 + random.nextInt(751);
         try {
             Thread.sleep(sleep);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
