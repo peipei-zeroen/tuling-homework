@@ -10,3 +10,20 @@
 2. 包 `org.zeroen.tuling.homework.semaphore` 是以AOP+Semaphore实现的一个对Controller层的限流
    - RequestLimit注解定义信号量大小，若为负数或者未定义就视为不限流
    - SemaphoreAspect是限流逻辑的核心，主要采用Around的方式。
+
+3. 包 `org.zeroen.tuling.homework.longadder`是`JDK1.8` `LongAdder`的一个实现Demo
+   - 模拟了耗时的任务
+   - 对比了`LongAdder`和`AtomicLong`执行情况
+   > `AtomicLong`的情况
+     完成总任务数：1000
+     任务总耗时：423724ms
+     平均耗时：423.724ms
+     ===============================================================
+     主线程执行耗时：36033ms
+     
+   > `LongAdder`的情况
+     完成总任务数：1000
+     任务总耗时：420557ms
+     平均耗时：420.557ms
+     ===============================================================
+     主线程执行耗时：36043ms
